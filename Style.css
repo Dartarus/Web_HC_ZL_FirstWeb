@@ -4,10 +4,42 @@
     box-sizing: border-box;
     font-family:微軟正黑體;
 }
+/* 橫幅 */
 #banner{
    width: 100%;
+   /* 螢幕高度 */
    height: 100vh;
-   background-image: url(./img/car\ pic.jpg);
+   /* 縮寫bi */
+   background-image: url(./img/carpic.jpg);
+   /* 縮寫bgs 背景-尺寸 填滿 or 50% 500px */
    background-size: cover;
+   /* 圖片位置 左右 上下 */
+   background-position: 0 -300px;
    color: #000; 
+}
+#banner nav{
+   padding: 30px;
+}
+
+#banner a{
+    color:white;
+    /* 文字裝飾-無 */
+    text-decoration: none;
+    font-size: 24px;
+    padding:0 30px;
+    transition:0.3s;
+}
+
+#banner a:hover{
+    color: #aaa;
+}
+#banner p{
+    text-align: center;
+    margin-top: 300px;
+    opacity:0.7;
+    font-size: 20px;
+    padding: 30px;
+}
+#banner hr{
+    width: 300px;
 }
