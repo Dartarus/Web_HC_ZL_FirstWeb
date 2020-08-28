@@ -15,7 +15,7 @@
    background-size: cover;
    /* 圖片位置 左右 上下 */
    background-position: 0 -300px;
-   color:#CF9E9E; 
+   color:hsl(135, 34%, 72%); 
    /* 背景 - 附著 - 固定*/
    background-attachment: fixed;
 }
@@ -46,7 +46,7 @@
     color: #ffffff;
 }
 #banner hr{
-    width: 700px;
+    width: 1000px;
     opacity:0.8;
     margin: 0 auto;
 }
