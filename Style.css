@@ -4,13 +4,18 @@
     box-sizing: border-box;
     font-family:微軟正黑體;
 }
+
+body{
+    background:hsl(135, 100%, 94%);
+}
+
 /* 橫幅 */
 #banner{
    width: 100%;
    /* 螢幕高度 */
    height: 100vh;
    /* 縮寫bi */
-   background-image: url(./img/carpic.jpg);
+   background-image: url(./img/banner.jpg);
    /* 縮寫bgs 背景-尺寸 填滿 or 50% 500px */
    background-size: cover;
    /* 圖片位置 左右 上下 */
@@ -58,6 +63,42 @@
 }
 
 #news {
-    height: 500px;
-    background:hsl(135, 34%, 72%);
+    width:1200px;
+    height: 100vh;
+    margin: 0 auto;
+    display: grid;
+    padding:150px 0;
+    grid-template-columns: 1fr 1fr;
+    /* 格線間隙 */
+    grid-gap: 50px;
+    text-align: center;
+}
+
+#news > div{
+    background: #eee;
+}
+
+#news h1{
+    padding: 15px;
+}
+
+#news h3{
+    padding: 20px;
+    color:rgb(0, 88, 7);
+}
+
+#news p{
+    text-align: center;
+    line-height: 1.5;
+    height: 45px;
+}
+
+#news #news-left {
+    height: 300px;
+    background-image: url(./img/news-left.jpg);
+}
+
+#news #news-right {
+    height: 300px;
+    background-image: url(./img/news-right.jpg);
 }
