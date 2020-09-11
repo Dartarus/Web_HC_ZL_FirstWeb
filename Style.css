@@ -140,6 +140,8 @@ a.button:hover{
     font-weight: 100;
 }
 
+/*關於我與聯絡我*/
+
 #content{
     width:1200px;
     margin: 0 auto;
@@ -148,17 +150,47 @@ a.button:hover{
 #content div{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 30px;
+    grid-gap: 50px;
+}
+
+#content h1 {
+    text-align: center;
+    font-weight: 100;
+    color: #333;
+    padding: 50px 0 50px;
+    letter-spacing: 20px;
+    padding-left: 20px;
 }
 
 #content a{
-    height: 400px;
+    height: 350px;
+    /* 行高 = 高度 (垂直置中-僅限一行文字) */
+    line-height: 350px;
+    text-decoration: none;
+    color:white;
+    font-size: 35px;
+    text-align: center;
+}
+
+#content a span{
+    /* 改為區塊元素:填滿 */
+    display:block;
+    backdrop-filter: blur(5px) grayscale(80%);
+    transition: 0.5s;
+}
+
+#content a span:hover{
+    backdrop-filter: blur(1px) grayscale(10%);
 }
 
 #content #About{
     background-image: url(./img/Tesla_logo.jpg);
+    border: 1px solid rgb(0, 88, 7);
+    background-size: cover;
 }
 
 #content #Contact{
     background-image: url(./img/pic.jpg);
+    border: 1px solid rgb(0, 88, 7);
+    background-size: cover;
 }
