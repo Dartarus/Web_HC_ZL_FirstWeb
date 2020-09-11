@@ -80,6 +80,7 @@ body{
 
 #news h1{
     padding: 15px;
+    color: rgb(168, 0, 0);
 }
 
 #news h3{
@@ -90,7 +91,7 @@ body{
 #news p{
     text-align: center;
     line-height: 1.5;
-    height: 45px;
+    height: 60px;
 }
 
 #news #news-left {
@@ -101,4 +102,17 @@ body{
 #news #news-right {
     height: 300px;
     background-image: url(./img/news-right.jpg);
+}
+
+a.button{
+    color: rgb(0, 88, 7);
+    padding: 15px 50px;
+    text-decoration:none;
+    border: 1px solid rgb(0, 88, 7);
+    transition:0.5s;
+}
+
+a.button:hover{
+    color:#eee;
+    background: rgb(117, 0, 0);
 }
