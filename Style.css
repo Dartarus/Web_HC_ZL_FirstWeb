@@ -7,7 +7,7 @@
 
 body{
     background:hsl(135, 100%, 94%);
-    height:4000px;
+    height:auto;
 }
 
 /* 橫幅 */
@@ -206,7 +206,7 @@ a.button:hover{
 footer{
     background: #000;
     text-align: center;
-    padding: 150px 0;
+    padding: 100px 0;
     color: white;
 }
 
