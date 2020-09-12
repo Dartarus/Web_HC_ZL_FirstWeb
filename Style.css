@@ -24,11 +24,13 @@ body{
    /* 背景 - 附著 - 固定*/
    background-attachment: fixed;
 }
-#banner nav{
+
+/* 橫幅和關於我們 導覽 */
+#banner nav , #banner-about nav{
    padding: 30px;
 }
 
-#banner a{
+#banner a, #banner-about a{
     color:rgb(0, 99, 38);
     /* 文字裝飾-無 */
     text-decoration: none;
@@ -37,7 +39,7 @@ body{
     transition:0.3s;
 }
 
-#banner a:hover{
+#banner a:hover , #banner-about a:hover {
     color: #CE0000;
 }
 #banner p{
@@ -246,3 +248,35 @@ footer h2 a:hover {
     text-decoration: none;
     color:rgb(185, 0, 0);
 }
+
+/* 關於我們分頁 */
+/* 橫幅 */
+#banner-about{
+    width: 100%;
+    /* 螢幕高度 */
+    height: 40vh;
+    /* 縮寫bi */
+    background-image: url(./img/about.jpg);
+    /* 縮寫bgs 背景-尺寸 填滿 or 50% 500px */
+    background-size: cover;
+    /* 圖片位置 左右 上下 */
+    background-position: 0 -300px; 
+    /* 背景 - 附著 - 固定*/
+    background-attachment: fixed;
+ }
+
+ #banner-about nav{
+     backdrop-filter:blur(3px) opacity(35%);
+ }
+
+ #banner-about h2{
+    color:white;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 100;
+    letter-spacing: 20px;
+    padding-left: 20px;
+    line-height: 20vh;
+    backdrop-filter: opacity(35%);
+    height: 30.5vh;
+ }
