@@ -31,7 +31,7 @@ body{
 }
 
 #banner a, #banner-about a , #banner-contact a{
-    color:rgb(0, 99, 38);
+    color:rgb(255, 255, 255);
     /* 文字裝飾-無 */
     text-decoration: none;
     font-size: 24px;
@@ -337,13 +337,15 @@ footer h2 a:hover {
 #banner-contact{
     width: 100%;
     /* 螢幕高度 */
-    height: 40vh;
+    height: 55vh;
     /* 縮寫bi */
     background-image: url(./img/contact.jpg);
+    /* margin-top:50px; */
+    /* padding-top: 10px; */
     /* 縮寫bgs 背景-尺寸 填滿 or 50% 500px */
     background-size: cover ;
     /* 圖片位置 左右 上下 */
-    background-position: center bottom; 
+    background-position: 0 -300px; 
     /* 背景 - 附著 - 固定*/
     background-attachment: fixed;
  }
@@ -369,7 +371,7 @@ footer h2 a:hover {
       margin: 50px auto 50px;
     }
 
-    #form-self #name , #form-self #email, #form-self #message{
+#form-self #name , #form-self #email, #form-self #message{
     width: 100%;
     padding: 5px;
     font-size: 16px;
